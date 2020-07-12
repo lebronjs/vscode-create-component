@@ -1,0 +1,8 @@
+import React, { useState, useEffect } from 'react';
+import './index.scss';
+
+const ComponentName = (props) => {
+    return <></>;
+};
+
+export default ComponentName;
