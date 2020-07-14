@@ -23,7 +23,7 @@
         "commands": [
             {
                 "command": "magic-right.createFunctionalComponent",
-                "title": "Create Functional Component"
+                "title": "🤟Create Functional Component"
             }
         ],
         "menus": {
@@ -33,6 +33,21 @@
                     "group": "1_modification"
                 }
             ]
+        },
+        "configuration": {
+            "title": "Magic Right ",
+            "properties": {
+                "magicRight.jsExtension": {
+                    "type": "string",
+                    "default": "jsx",
+                    "description": "component's js file extension "
+                },
+                "magicRight.cssExtension": {
+                    "type": "string",
+                    "default": "scss",
+                    "description": "component's js file extension "
+                }
+            }
         }
     },
     "scripts": {

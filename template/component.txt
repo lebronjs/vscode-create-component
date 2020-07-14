@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './index.scss';
+import './index.[cssExtension]';
 
 const ComponentName = (props) => {
     return <></>;

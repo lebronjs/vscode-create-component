@@ -41,9 +41,13 @@ function activate(context) {
         fs.writeFileSync(path.resolve(`${dest}/index.${css_extension}`), '');
         fs.writeFileSync(
             path.resolve(`${dest}/index.${extension}`),
-            template.replace(/ComponentName/g, componentName)
+            template
+                .replace(/ComponentName/g, componentName)
+                .replace(/\[cssExtension\]/, css_extension)
         );
-        vscode.window.showInformationMessage(`创建 ${name} successfully !!!`);
+        vscode.window.showInformationMessage(
+            `创建 ${componentName} successfully !!!`
+        );
     }
 
     let cfc = vscode.commands.registerCommand(
@@ -55,9 +59,15 @@ function activate(context) {
                 placeHolder: 'Component Name',
             };
 
+            const jsExtension = vscode.workspace
+                .getConfiguration('magicRight')
+                .get('jsExtension');
+            const cssExtension = vscode.workspace
+                .getConfiguration('magicRight')
+                .get('cssExtension');
             vscode.window.showInputBox(options).then((value) => {
                 if (!value) return;
-                createComponent(folderPath, value);
+                createComponent(folderPath, value, jsExtension, cssExtension);
             });
         }
     );
