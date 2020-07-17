@@ -45,7 +45,7 @@
                 "magicRight.cssExtension": {
                     "type": "string",
                     "default": "scss",
-                    "description": "component's js file extension "
+                    "description": "component's css file extension "
                 }
             }
         }
