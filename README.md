@@ -9,7 +9,7 @@ An extension for generating basic functional component code file 📃 by right-c
 
 ## Usage
 
-![](<https://raw.githubusercontent.com/lebronjs/md-img/master/Jul-17-2020%2023-22-57%20(1).gif>)
+![](<https://raw.githubusercontent.com/lebronjs/md-img/master/magicrightusage.gif>)
 
 ## Configuration
 
